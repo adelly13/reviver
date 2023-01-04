@@ -21,7 +21,7 @@ export default function Nav({ active }) {
                     {links.map(({ href, label }) => (
                         <li key={`${href}${label}`}>
                             <Link legacyBehavior href={href}>
-                                <a className={`hover:text-dark-teal hover:drop-shadow-lg px-12 py-2 ${active === label ?  'text-dark-teal drop-shadow-lg bg-white bg-opacity-10' : ``}$`}>
+                                <a className={`hover:text-dark-teal hover:drop-shadow-lg hover:animate-pulse px-12 py-2 ${active === label ?  'text-dark-teal drop-shadow-lg bg-white bg-opacity-10' : ``}$`}>
                                     {label} 
                                 </a>
                             </Link>
